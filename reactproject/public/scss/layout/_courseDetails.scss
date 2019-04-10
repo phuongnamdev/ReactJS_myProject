@@ -1,0 +1,155 @@
+.course-details-page{
+    background: #f6f8f8;
+    .details-top{
+        position: relative;
+        height: 550px;
+        background-image: url(https://images.pexels.com/photos/1509428/pexels-photo-1509428.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+        background-position: center center;
+        background-size: cover;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 55px auto;
+        .details-top__overlay{
+            background: linear-gradient(to right,rgba(0,0,0,.8),rgba(0,0,0,.4));
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .details-top-content{
+            position: relative;
+            display: grid;
+            grid-template-columns: 1.5fr 2fr;
+            grid-gap: 30px;
+            max-width: 70%;
+            .details-top__item{
+                .details-top__item--title{
+                    text-transform: uppercase;
+                    letter-spacing: 3px;
+                    word-spacing: 10px;
+                    font-size: 3em;
+                    margin-bottom: 50px;
+                    font-weight: 600;
+                }
+                .details-top__item--star{
+                    span{
+                        margin: 5px;
+                        color: #5cb85c;
+                    }
+                }
+                .details-top__item--img{
+                    float: right;
+                    img {
+                        width: 400px;
+                        border-radius: 10px;
+                        box-shadow: 0 0 10px 0 grey;
+                    }
+                }
+            }
+        }
+    }
+    
+    .details-content{
+        display: grid;
+        grid-template-columns: 2.5fr 1.5fr;
+        grid-gap: 30px;
+        .details-info{
+            text-align: left;
+            .details-info__overview, .details-info__request, .details-benefit{
+                margin: 35px auto;
+                h3{
+                    margin-bottom: 20px;
+                    text-transform: capitalize;
+                }
+            }
+            .details-info__request{
+                ul{
+                    margin-left: 35px;
+                    li{
+                        list-style: square;
+                        margin: 15px auto;
+                    }
+                }
+            }
+            .details-benefit{
+                margin-bottom: 0;
+                .details-benefit__content{
+                    .details-icon{
+                        color: green;
+                    }
+                }
+            }
+        }
+        .details-program{
+            .details-program__lesson{
+                .lesson-number{
+                    font-weight: 650;
+                    text-decoration: underline;
+                }
+            }
+
+        }
+        .details-cover{
+            box-shadow: 6px 6px 15px 0 rgba(0,0,0,0.15);
+            border-radius: 3.5px;
+            text-align: left;
+            ul{
+                li{
+                    padding: 40px 20px;
+                    border-bottom: solid 1px #eef1f2;
+                    p{
+                        span{
+                            float: right;
+                            font-weight: 700;
+                        }
+                    }
+                    &.details-cover__btn{
+                        text-align: center;
+                        button{
+                            padding: 15px 25px;
+                            border-radius: 10px;
+                            outline: none;
+                            border: none;
+                            cursor: pointer;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px ) {
+    .course-details-page{
+        .details-top{
+            .details-top-content{
+                display: block;
+                .details-top__item{
+                    text-align: center;
+                    .details-top__item--img{
+                        float: none;
+                    }
+                }
+            }
+        }
+        .details-content{
+            display: block;
+        }
+    }
+}
+@media only screen and (max-width: 375px ){
+    .course-details-page{
+        .details-top{
+            .details-top-content{
+                .details-top__item{
+                    .details-top__item--img{
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }    
+}

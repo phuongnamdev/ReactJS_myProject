@@ -1,0 +1,38 @@
+.userPage{
+    margin: 70px auto;
+    height: 490px;;
+    .userPage__content{
+        display: grid;
+        grid-template-columns: 1fr 2.5fr;
+        grid-gap: 30px;
+        .userPage__content--cover{
+            box-shadow: 6px 6px 15px 0 rgba(0,0,0,0.15);
+            border-radius: 3.5px;
+            text-align: center;
+            .userName{
+                color: #468847;
+                font-weight: 650;
+                font-size: 2em;
+                margin: 10px 0;
+            }
+            .user-type{
+                text-transform: uppercase;
+                margin-bottom: 30px ;
+            }
+            .user-tab{
+                ul{
+                    li{
+                        &.nav-item{
+                            width: 100%
+                        }
+                    }
+                }
+            }
+        }
+        .userPage__content--info{
+            .tab-content{
+                height: 460px;
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@keyframes imgHover{
+    0%{
+        transform: translateX(0deg)
+    }
+    50%{
+        transform: translateX(180deg)
+    }
+
+    100%{
+        transform: translateX(360deg)
+    }
+}

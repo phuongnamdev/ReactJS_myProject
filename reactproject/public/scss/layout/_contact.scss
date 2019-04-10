@@ -1,0 +1,79 @@
+.contact{
+    position: relative;
+    color: white;
+    position: relative;
+    height: 550px;
+    background-image: url(    https://wallpapers-house.com/data/out/12/wallpaper2you_514586.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .contact-overlay{
+        background: linear-gradient(to right,rgba(0,0,0,.8),rgba(0,0,0,.4));
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .contact-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        min-width: 80vw;
+        .contact-title{
+            text-align: center;
+            margin-bottom: 15vh;
+            h2{
+                text-transform: uppercase;
+                margin-bottom: 20px;
+                color: white;
+            }
+        }
+        .contact-info{
+            padding-left: 0px;
+            h3 {
+                margin-bottom: 36px;
+                color: white;
+            }
+            li {
+                margin: 15px 0;
+                text-align: left;
+                span {
+                    margin-right: 10px;
+                }
+                
+            }
+        }
+        .contact-form{
+            .form-input{
+                width: 100%;
+                margin-bottom: 45px;
+                input{
+                    width: 100%;
+                    padding: 8px 18px;
+                    border-radius: 10px;
+                    outline: none;
+                }
+            }
+            .form-message{
+                width: 100%;
+                border-radius: 10px;
+                outline: none;
+                padding: 20px 25px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px ){
+    .contact{
+        height: 1000px;
+    }
+}
+
+
+

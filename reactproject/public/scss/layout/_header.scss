@@ -1,0 +1,26 @@
+.header{
+    background-color: rgba(255,255,255,.95);
+    // background: transparent;
+    box-shadow: 0 0 15px rgba(0,0,0,.3);
+    .navbar{
+        ul{
+            li.nav-item {
+                margin-left: 10px;
+                font-weight: 550;
+                &.nav-user{
+                    cursor: pointer;
+                    padding: 0 20px;
+                    .myDropdown{
+                        button{
+                            font-weight: 600;
+                            span{
+                                font-weight: 650;
+                                font-size: 1.2em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

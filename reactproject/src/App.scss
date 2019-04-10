@@ -1,0 +1,25 @@
+@import "../public/scss/base/_reset.scss";
+
+@import "../public/scss/helper/_animation.scss";
+@import "../public/scss/helper/_extend.scss";
+@import "../public/scss/helper/_function.scss";
+@import "../public/scss/helper/_mixin.scss";
+@import "../public/scss/helper/_variable.scss";
+
+@import "../public/scss/layout/_header.scss";
+@import "../public/scss/layout/_footer.scss";
+@import "../public/scss/layout/_banner.scss";
+@import "../public/scss/layout/_courseList.scss";
+@import "../public/scss/layout/_ourTeacher.scss";
+@import "../public/scss/layout/_contact.scss";
+@import "../public/scss/layout/_userPage.scss";
+@import "../public/scss/layout/_courseListPage.scss";
+@import "../public/scss/layout/_courseDetails.scss";
+
+@import "../public/scss/layout/_admin.scss";
+
+@import "../public/scss/vendor/_bootstraps.scss";
+
+.App {
+  text-align: center;
+}
